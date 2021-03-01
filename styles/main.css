@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-gap: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 46px -28px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 46px -28px rgba(0, 0, 0, 0.75);
+}
+
+.section1, .section2, .section3 {
+  padding: 15px;
+}
+
+.section1 {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section1-title {
+  color: #2ab2af;
+  font-size: 1.2em;
+}
+
+.section1-title2 {
+  color: #c0df34;
+  font-size: 0.95rem;
+}
+
+.section1-paragraph {
+  font-weight: 400;
+  color: #98a6bd;
+  font-size: 0.85rem;
+  line-height: 2;
+  word-spacing: 1px;
+}
+
+.section2 {
+  background-color: #2ab2af;
+}
+
+.section2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2-title {
+  color: #e5eff5;
+  font-size: 1.2rem;
+}
+
+.section2 span {
+  font-size: 2.3rem;
+  color: #e5eff5;
+  font-weight: 700;
+}
+
+.section2-price {
+  padding-left: 10px;
+  font-weight: 400;
+  color: #acbfdc;
+  font-size: 1.2rem;
+}
+
+.section2-paragraph {
+  color: #e5eff5;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.section2-button {
+  background-color: #c0df34;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: #e5eff5;
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+  outline: none;
+  -webkit-box-shadow: 10px 10px 46px -28px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 46px -28px rgba(0, 0, 0, 0.75);
+}
+
+.section3 {
+  background-color: #47bdbb;
+}
+
+.section3-title {
+  color: #e5eff5;
+  font-size: 1.2rem;
+}
+
+.section3-list {
+  list-style: none;
+  color: #e5eff5;
+  padding-left: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container {
+    margin: 0;
+    max-width: 700px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .section1, .section2, .section3 {
+    padding: 30px 0 0 30px;
+  }
+  .section1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .section1-title {
+    font-size: 2rem;
+  }
+  .section1-title2 {
+    font-size: 1.5rem;
+  }
+  .section1-paragraph {
+    font-size: 1.2rem;
+  }
+}
+
+.section2 {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.section2-title {
+  color: #e5eff5;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.section2 span {
+  font-size: 2.3rem;
+  color: #e5eff5;
+  font-weight: 700;
+}
+
+.section2-price {
+  padding-left: 10px;
+  font-weight: 400;
+  color: #acbfdc;
+  font-size: 1.2rem;
+}
+
+.section2-paragraph {
+  font-size: 1.1rem;
+}
+
+.section3 {
+  padding-top: 30px;
+}
+
+.section3-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.section3-list {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
